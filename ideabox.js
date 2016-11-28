@@ -6,7 +6,6 @@ var titleField = $('#title-input');
 var bodyField = $('#body-input');
 var ideaFields = $('#title-input, #body-input');
 var ideaBox = $('.idea-box');
-var storageArray = [];
 var currentIdea;
 
 getAndDisplayIdeas();
