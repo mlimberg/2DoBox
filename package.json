@@ -1,0 +1,39 @@
+{
+  "name": "2dobox",
+  "version": "1.0.0",
+  "description": "2DoBox Webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlimberg/2DoBox.git"
+  },
+  "keywords": [
+    "2DoBox",
+    "mod-2-project"
+  ],
+  "author": "Mike and Lauren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlimberg/2DoBox/issues"
+  },
+  "homepage": "https://github.com/mlimberg/2DoBox#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "chai": "^3.5.0",
+    "css-loader": "^0.26.0",
+    "image-webpack-loader": "^3.0.0",
+    "mocha": "^3.2.0",
+    "mocha-loader": "^1.0.0",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
