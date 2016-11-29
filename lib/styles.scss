@@ -1,3 +1,5 @@
+@import 'reset.scss';
+
 html, body{
   font-family: 'Open-Sans', sans-serif;
 }
@@ -6,7 +8,6 @@ h1{
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   width: 95px;
-  font-size:
 }
 
 #box-text{
@@ -122,14 +123,14 @@ textarea{
 .delete-idea {
   display: inline-block;
   float: right;
-  background-image: url('Images/delete.svg');
+  background-image: url('../Images/delete.svg');
   height: 40px;
   width: 40px;
   vertical-align: bottom;
 }
 
 .delete-idea:hover {
-  background-image: url('Images/delete-hover.svg');
+  background-image: url('../Images/delete-hover.svg');
   background-position: inherit;
 }
 
@@ -173,19 +174,19 @@ textarea{
 }
 
 .downvote {
-  background: url('Images/downvote.svg')
+  background: url('../Images/downvote.svg')
 }
 
 .upvote {
-  background: url('Images/upvote.svg')
+  background: url('../Images/upvote.svg')
 }
 
 .downvote:hover{
-  background: url('Images/downvote-hover.svg');
+  background: url('../Images/downvote-hover.svg');
 }
 
 .upvote:hover {
-  background: url('Images/upvote-hover.svg');
+  background: url('../Images/upvote-hover.svg');
 }
 
 
@@ -211,12 +212,4 @@ textarea{
   margin: none;
   padding-bottom: 0px;
 }
-}
-
-.hidden {
-  display: none;
-  border-bottom: 1px solid #ffffff;
-  width: 0%;
-  margin: none;
-  padding-bottom: 0px;
 }
