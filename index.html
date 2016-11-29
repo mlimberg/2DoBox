@@ -10,15 +10,15 @@
   <body>
 
     <section class="input-section">
-      <div class="main-h1"><h1>idea</h1><h1 id="box-text">box</h1></div>
+      <div class="main-h1"><h1 id="task-text">2do</h1><h1 id="box-text">box</h1></div>
       <input id="title-input" type="text" name="title" placeholder="Title">
-      <textarea id="body-input" type="text" name="body" placeholder="Body" rows="5"></textarea>
+      <textarea id="body-input" type="text" name="body" placeholder="Task" maxlength="125" rows="3"></textarea>
       <button id="save-button" type="button" name="save" disabled="true">save</button>
     </section>
 
-    <section class="idea-section">
+    <section class="task-section">
       <input id="search-input" type="text" name="search" value="" placeholder="Search">
-      <section class="idea-list"></section>
+      <section class="task-list"></section>
     </section>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
