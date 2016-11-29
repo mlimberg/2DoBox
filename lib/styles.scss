@@ -197,6 +197,11 @@ textarea {
 #completed-task {
   border: 1px solid black;
   margin-right: 0;
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
 }
 
 
