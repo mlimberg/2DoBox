@@ -35,7 +35,7 @@ h1 {
   display: inline-block;
 }
 
-.input-section input, .input-section button, .input-section textarea, .task-section input {
+.input-section input, .input-section button, .input-section textarea, .search-section input {
   display: block;
   width: 90%;
   margin: auto;
@@ -43,7 +43,16 @@ h1 {
   border-radius: 5px;
 }
 
- .input-section input, .input-section textarea, .task-section input {
+.search-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.completed {
+  display: none;
+}
+
+ .input-section input, .input-section textarea, .search-section input {
    font-size: 20px;
    padding-left: 5px;
  }
@@ -211,7 +220,7 @@ textarea {
 
 @media screen and (min-width: 900px) {
 
-.input-section input, .input-section button, .input-section textarea, .task-section input{
+.input-section input, .input-section button, .input-section textarea, .search-section input{
     width: 814px;
 }
 
