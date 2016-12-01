@@ -1,4 +1,6 @@
 @import 'reset.scss';
+@import 'buttons.scss';
+
 
 html, body {
   font-family: 'Open-Sans', sans-serif;
@@ -35,7 +37,7 @@ h1 {
   display: inline-block;
 }
 
-.input-section input, .input-section button, .input-section textarea, .search-section input {
+.input-section input, .input-section button, .input-section textarea {
   display: block;
   width: 90%;
   margin: auto;
@@ -71,6 +73,21 @@ textarea {
   margin-bottom: 20px;
 }
 
+#search-input {
+  width: 70%;
+  display: block;
+  margin: 20px 2.5px;
+  border: 1px solid #939958;
+  border-radius: 5px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
 #body-input {
   height: 90px;
   margin-bottom: 20px;
@@ -79,29 +96,6 @@ textarea {
 ::-webkit-input-placeholder {
   font-size: 20px;
   padding-left: 5px;
-}
-
-#save-button{
-  font-size: 20px;
-  color: white;
-  background-color: #00a79d;
-  width: 91%;
-  border: none;
-  border-radius: 5px;
-}
-
-#save-button:hover{
-  background-color: #045e55;
-  cursor: pointer;
-}
-
-#save-button:disabled{
-  background-color: #D3D3D3;
-  cursor: default;
-}
-
-#search-input{
-  margin-top: 20px;
 }
 
 .task-box {
@@ -126,7 +120,6 @@ textarea {
   width: 85%;
   margin-bottom: 15px;
 }
-
 
 .upvote:hover, .downvote:hover, .delete-task:hover {
   cursor: pointer;
@@ -211,19 +204,12 @@ textarea {
 }
 
 
-#completed-task {
-  border: 1px solid black;
-  margin-right: 0;
-  &:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-  }
-}
 
 .strike-thru {
   text-decoration: line-through;
 }
+
+
 
 
 @media screen and (min-width: 900px) {

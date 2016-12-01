@@ -1,0 +1,60 @@
+$button-background-color: #00a79d;
+$button-font-color: white;
+$button-hover-background: #045e55;
+$button-disabled-color: #D3D3D3;
+
+@mixin button-disabled {
+  background-color: $button-disabled-color;
+  color: white;
+  cursor: default;
+}
+
+@mixin button-enabled {
+  background-color: $button-background-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin button-hover {
+  background-color: $button-hover-background;
+  color: white;
+  cursor: pointer;
+}
+
+#save-button{
+  @include button-enabled;
+  font-size: 20px;
+  width: 91%;
+  &:hover {
+    @include button-hover;
+  }
+  &:disabled, &:disabled:hover {
+    @include button-disabled;
+  }
+}
+
+#show-completed {
+  height: 40px;
+  margin: 20px 2.5px;
+  font-size: 14px;
+  width: 20%;
+  @include button-enabled;
+  &:hover {
+    @include button-hover;
+  }
+  &:disabled, &:disabled:hover {
+    @include button-disabled;
+  }
+}
+
+
+#completed-task {
+  @include button-enabled;
+  &:hover {
+    @include button-hover;
+  }
+  &:disabled, &:disabled:hover {
+    @include button-disabled;
+  }
+}
