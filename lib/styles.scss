@@ -1,4 +1,6 @@
 @import 'reset.scss';
+@import 'buttons.scss';
+
 
 html, body {
   font-family: 'Open-Sans', sans-serif;
@@ -81,24 +83,6 @@ textarea {
   padding-left: 5px;
 }
 
-#save-button{
-  font-size: 20px;
-  color: white;
-  background-color: #00a79d;
-  width: 91%;
-  border: none;
-  border-radius: 5px;
-}
-
-#save-button:hover{
-  background-color: #045e55;
-  cursor: pointer;
-}
-
-#save-button:disabled{
-  background-color: #D3D3D3;
-  cursor: default;
-}
 
 #search-input{
   margin-top: 20px;
@@ -126,7 +110,6 @@ textarea {
   width: 85%;
   margin-bottom: 15px;
 }
-
 
 .upvote:hover, .downvote:hover, .delete-task:hover {
   cursor: pointer;
@@ -211,19 +194,12 @@ textarea {
 }
 
 
-#completed-task {
-  border: 1px solid black;
-  margin-right: 0;
-  &:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-  }
-}
 
 .strike-thru {
   text-decoration: line-through;
 }
+
+
 
 
 @media screen and (min-width: 900px) {
