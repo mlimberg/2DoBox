@@ -1,7 +1,4 @@
-$button-background-color: #00a79d;
-$button-font-color: white;
-$button-hover-background: #045e55;
-$button-disabled-color: #D3D3D3;
+
 
 @mixin button-disabled {
   background-color: $button-disabled-color;
