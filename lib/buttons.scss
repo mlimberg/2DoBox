@@ -36,8 +36,9 @@ $button-disabled-color: #D3D3D3;
 
 #show-completed {
   height: 40px;
-  margin: 20px 5px;
+  margin: 20px 2.5px;
   font-size: 14px;
+  width: 20%;
   @include button-enabled;
   &:hover {
     @include button-hover;

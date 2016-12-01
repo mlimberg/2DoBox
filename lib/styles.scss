@@ -37,7 +37,7 @@ h1 {
   display: inline-block;
 }
 
-.input-section input, .input-section button, .input-section textarea, .search-section input {
+.input-section input, .input-section button, .input-section textarea {
   display: block;
   width: 90%;
   margin: auto;
@@ -73,6 +73,21 @@ textarea {
   margin-bottom: 20px;
 }
 
+#search-input {
+  width: 70%;
+  display: block;
+  margin: 20px 2.5px;
+  border: 1px solid #939958;
+  border-radius: 5px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
 #body-input {
   height: 90px;
   margin-bottom: 20px;
@@ -81,11 +96,6 @@ textarea {
 ::-webkit-input-placeholder {
   font-size: 20px;
   padding-left: 5px;
-}
-
-
-#search-input{
-  margin-top: 20px;
 }
 
 .task-box {
