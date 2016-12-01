@@ -185,23 +185,31 @@ textarea {
   margin-right: 20px;
   display: inline-block;
   vertical-align: bottom;
+  border: none;
 }
 
 .downvote {
-  background: url('../Images/downvote.svg')
+  background: url('../Images/downvote.svg');
+  &:hover {
+    background: url('../Images/downvote-hover.svg');
+  }
+  &:hover:disabled {
+    background: url('../Images/downvote.svg');
+    cursor: default;
+  }
 }
 
 .upvote {
-  background: url('../Images/upvote.svg')
+  background: url('../Images/upvote.svg');
+  &:hover {
+    background: url('../Images/upvote-hover.svg');
+  }
+  &:hover:disabled {
+    background: url('../Images/upvote.svg');
+    cursor: default;
+  }
 }
 
-.downvote:hover{
-  background: url('../Images/downvote-hover.svg');
-}
-
-.upvote:hover {
-  background: url('../Images/upvote-hover.svg');
-}
 
 #completed-task {
   border: 1px solid black;
