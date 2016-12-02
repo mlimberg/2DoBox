@@ -12,7 +12,8 @@
     <section class="input-section">
       <div class="main-h1"><h1 id="task-text">2do</h1><h1 id="box-text">box</h1></div>
       <input id="title-input" type="text" name="title" placeholder="Title">
-      <textarea id="body-input" type="text" name="body" placeholder="Task" maxlength="125" rows="3"></textarea>
+      <textarea id="body-input" type="text" name="body" placeholder="Task" maxlength="120" rows="3"></textarea>
+      <span class="remaining-characters">120</span>
       <button id="save-button" type="button" name="save" disabled="true">save</button>
     </section>
 
@@ -21,7 +22,9 @@
       <button id="show-completed" disabled>Show Completed</button>
     </section>
 
-    <section class="task-list"></section>
+    <section class="task-list">
+      <button class="show-more">Show More Tasks</button>
+    </section>
 
     <script type="text/javascript" src="main.bundle.js" charset="utf-8">
     </script>
