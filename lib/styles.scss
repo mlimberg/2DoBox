@@ -74,6 +74,10 @@ textarea {
   margin-bottom: 20px;
 }
 
+#save-button {
+  margin-top: 5px;
+}
+
 #search-input {
   width: 70%;
   display: block;
@@ -91,7 +95,7 @@ textarea {
 
 #body-input {
   height: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -204,7 +208,15 @@ textarea {
   }
 }
 
+.remaining-characters {
+  display: inline-block;
+  margin-left: 12%;
+  padding-right: 3px;
+}
 
+.character-text {
+  display: inline-block;
+}
 
 .strike-thru {
   text-decoration: line-through;
