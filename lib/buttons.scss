@@ -44,28 +44,18 @@
 }
 
 #completed-task {
-  @include button-enabled;
   height: 25px;
   width: 15%;
   font-size: 13px;
   vertical-align: center;
   margin-left: 1%;
-  &:hover {
-    @include button-hover;
-  }
 }
 
 #show-more {
-  @include button-enabled;
   height: 45px;
   width: 100%;
   font-size: 20px;
-  &:hover {
-    @include button-hover;
-  }
 }
-
-
 
 .quality-btns {
   display: inline-block;
