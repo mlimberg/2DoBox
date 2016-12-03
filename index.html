@@ -12,14 +12,14 @@
     <section class="input-section">
       <div class="main-h1"><h1 id="task-text">2do</h1><h1 id="box-text">box</h1></div>
       <input id="title-input" type="text" name="title" placeholder="Title">
-      <textarea id="body-input" type="text" name="body" placeholder="Task" maxlength="120" rows="3"></textarea>
+      <textarea id="body-input" type="text" name="body" placeholder="Task" rows="3"></textarea>
       <span class="remaining-characters">120 </span><span class="character-text">Characters Remaining</span>
-      <button id="save-button" type="button" name="save" disabled="true">save</button>
+      <button id="save-button" class="btn" type="button" name="save" disabled="true">save</button>
     </section>
 
     <section class="search-section">
       <input id="search-input" type="text" name="search" value="" placeholder="Search">
-      <button id="show-completed" disabled>Show Completed</button>
+      <button id="show-completed" class="btn" disabled>Show Completed</button>
       <button id="none-btn" class="quality-btns">None</button>
       <button id="low-btn" class="quality-btns">Low</button>
       <button id="normal-btn" class="quality-btns">Normal</button>
@@ -29,7 +29,7 @@
     </section>
 
     <section class="task-list">
-      <button class="show-more">Show More Tasks</button>
+      <button id="show-more" class="btn">Show More Tasks</button>
     </section>
 
     <script type="text/javascript" src="main.bundle.js" charset="utf-8">

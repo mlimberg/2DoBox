@@ -38,7 +38,7 @@ h1 {
   display: inline-block;
 }
 
-.input-section input, .input-section button, .input-section textarea {
+.input-section input, .input-section textarea {
   display: block;
   width: 90%;
   margin: auto;
@@ -222,8 +222,9 @@ textarea {
   text-decoration: line-through;
 }
 
-
-
+.remaining-characters, .character-text {
+  color: #bab6b6;
+}
 
 @media screen and (min-width: 900px) {
 
