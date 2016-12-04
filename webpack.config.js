@@ -34,5 +34,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.json', '.scss', '.css']
+  },
+  node: {
+    fs: 'empty',
+    child_process: 'empty',
+    readline: 'empty',
+    net: 'empty'
   }
 };
