@@ -63,10 +63,11 @@
   background-color: white;
   font-weight: 500;
   height: 40px;
-  margin: 10px 5px;
+  margin: 10px auto;
   font-size: 15px;
   width: 15%;
   &:hover {
     color: $button-background-color;
+    cursor: pointer;
   }
 }
