@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
@@ -11,8 +11,8 @@
 
     <section class="input-section">
       <div class="main-h1"><h1 id="task-text">2do</h1><h1 id="box-text">box</h1></div>
-      <input id="title-input" type="text" name="title" placeholder="Title">
-      <textarea id="body-input" type="text" name="body" placeholder="Task" rows="3"></textarea>
+      <input id="title-input" type="text" aria-label="input"  placeholder="Title">
+      <textarea id="body-input" name="body" placeholder="Task" rows="3" aria-label="input box"></textarea>
       <section class="character-count">
         <span class="remaining-characters">120 </span>
         <span class="character-text">Characters Remaining</span>
@@ -21,7 +21,7 @@
     </section>
 
     <section class="search-section">
-      <input id="search-input" type="text" name="search" value="" placeholder="Search">
+      <input id="search-input" type="text" name="search" value="" placeholder="Search" aria-label="input">
       <button id="show-completed" class="btn" disabled>Show Completed</button>
     </section>
     <section class="filter-section">

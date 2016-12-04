@@ -17,6 +17,10 @@ h1 {
   color: #6d6e71;
 }
 
+#task-text {
+  color: #045e55;
+}
+
 .main-h1 {
   text-align: center;
   width: 200px;
@@ -131,10 +135,11 @@ textarea {
 .delete-task {
   display: inline-block;
   float: right;
-  background-image: url('../Images/delete.svg');
+  background: url('../Images/delete.svg');
   height: 40px;
   width: 40px;
   vertical-align: bottom;
+  border: none;
 }
 
 .delete-task:hover {
@@ -209,10 +214,12 @@ textarea {
 .remaining-characters {
   display: inline-block;
   padding-right: 3px;
+  color: black;
 }
 
 .character-text {
   display: inline-block;
+  color: black;
 }
 
 .strike-thru {
