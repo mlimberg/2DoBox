@@ -175,4 +175,82 @@ test.it("test that card is removed when delete button is clicked", () => {
     driver.quit();
 });
 
+test.it("should clear the input fields when task is submitted", () => {
+
+  const driver = new webdriver.Builder()
+                              .forBrowser('chrome')
+                              .build();
+
+    driver.get('http://localhost:8080');
+
+    const title          = driver.findElement({name: 'title'});
+    const body           = driver.findElement({name: 'body'});
+    const saveButton     = driver.findElement({name: 'save'});
+
+    title.sendKeys('this is a title');
+    body.sendKeys('this is a description');
+    saveButton.click();
+
+    title.getText().then((text) =>{
+      assert.equal(text, '');
+    });
+
+    body.getText().then((text) => {
+      assert.equal(text, '');
+    })
+
+    driver.quit();
+});
+
+test.it("should disable save button after save button is clicked", () => {
+
+  const driver = new webdriver.Builder()
+                              .forBrowser('chrome')
+                              .build();
+
+    driver.get('http://localhost:8080');
+
+    const title          = driver.findElement({name: 'title'});
+    const body           = driver.findElement({name: 'body'});
+    const saveButton     = driver.findElement({name: 'save'});
+
+    title.sendKeys('this is a title');
+    body.sendKeys('this is a description');
+    saveButton.click();
+
+    saveButton.getAttribute('disabled').then((attr) => {
+      assert.equal(attr, 'true');
+    });
+
+    driver.quit();
+});
+
+test.it("should disable show completed button after click", () => {
+
+  const driver = new webdriver.Builder()
+                              .forBrowser('chrome')
+                              .build();
+
+    driver.get('http://localhost:8080');
+
+    const title          = driver.findElement({name: 'title'});
+    const body           = driver.findElement({name: 'body'});
+    const saveButton     = driver.findElement({name: 'save'});
+    const showCompleted  = driver.findElement({id: 'show-completed'});
+    const allButton      = driver.findElement({id: 'all-btn'});
+
+    title.sendKeys('this is a title');
+    body.sendKeys('this is a description');
+    saveButton.click();
+
+    const completeButton = driver.findElement({className: 'completed-task'});
+
+    completeButton.click();
+    allButton.click();
+    showCompleted.click();
+
+    showCompleted.getAttribute('disabled').then((attr) => {
+      assert.equal(attr, 'true');
+    });
+  });
 });
