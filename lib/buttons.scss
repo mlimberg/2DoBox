@@ -52,9 +52,10 @@
 }
 
 #show-more {
-  height: 45px;
+  height: 70px;
   width: 100%;
   font-size: 20px;
+  border-radius: 0;
 }
 
 .quality-btns {
@@ -67,7 +68,7 @@
   font-size: 15px;
   width: 15%;
   &:hover {
-    color: $button-background-color;
+    color: $button-hover-background;
     cursor: pointer;
   }
 }

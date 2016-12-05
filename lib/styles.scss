@@ -14,11 +14,11 @@ h1 {
 }
 
 #box-text {
-  color: #6d6e71;
+  color: #4E5251;
 }
 
 #task-text {
-  color: #045e55;
+  color: #212687;
 }
 
 .main-h1 {
@@ -32,7 +32,7 @@ h1 {
 .input-section {
   width: 100%;
   height: 310px;
-  background-color: #e5f3f2;
+  background-color: #BCCCFB;
   padding-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@ h1 {
   display: block;
   width: 90%;
   margin: auto;
-  border: 1px solid #939958;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -84,7 +84,7 @@ textarea {
   width: 70%;
   display: block;
   margin: 20px 2.5px;
-  border: 1px solid #939958;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -120,7 +120,7 @@ textarea {
 }
 
 .task-title {
-  color: #6D6E71;
+  color: #4E5251;
   display: inline-block;
   font-size: 40px;
   overflow: visible;
@@ -148,7 +148,7 @@ textarea {
 }
 
 .task-body {
-  color: #939598;
+  color: #6D7271;
   margin: 30px auto;
   font-size: 25px;
   font-weight: lighter;
@@ -173,7 +173,7 @@ textarea {
 }
 
 .task-ranking {
-  color: #D1D3D4;
+  color: #6D7271;
   display: inline-block;
   height: 30px;
   text-align: left;
@@ -228,7 +228,7 @@ textarea {
 
 .character-count {
   display: block;
-  color: #bab6b6;
+  color: black;
   width: 100%;
   text-align: center;
   font-weight: lighter;
