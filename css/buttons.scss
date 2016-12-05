@@ -1,0 +1,74 @@
+@mixin button-disabled {
+  background-color: $button-disabled-color;
+  color: $button-font-color;
+  cursor: default;
+  border: none;
+}
+
+@mixin button-enabled {
+  background-color: $button-background-color;
+  color: $button-font-color;
+  border-radius: 5px;
+  border: none;
+}
+
+@mixin button-hover {
+  background-color: $button-hover-background;
+  color: $button-font-color;
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  @include button-enabled;
+  &:hover {
+    @include button-hover;
+  }
+  &:disabled, &:disabled:hover {
+    @include button-disabled;
+  }
+}
+
+#save-button {
+  font-size: 20px;
+  width: 80%;
+  margin: 5px auto;
+  display: block;
+}
+
+#show-completed {
+  height: 45px;
+  margin: 20px 2.5px;
+  font-size: 14px;
+  width: 20%;
+}
+
+.completed-task {
+  height: 25px;
+  width: 15%;
+  font-size: 13px;
+  vertical-align: center;
+  margin-left: 1%;
+}
+
+#show-more {
+  height: 70px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.quality-btns {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  font-weight: 500;
+  height: 40px;
+  margin: 10px auto;
+  font-size: 15px;
+  width: 15%;
+  &:hover {
+    color: $button-hover-background;
+    cursor: pointer;
+  }
+}
