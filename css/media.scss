@@ -29,22 +29,6 @@
 
 }
 
-@media screen and (max-width: 500px) {
-
-  .completed-task {
-    display: block;
-    float: right;
-    margin-top: 5px;
-  }
-
-  .task-box-footer {
-    margin-bottom: 20px;
-  }
-
-
-}
-
-
 @media screen and (max-width: 450px) {
 
   .filter-section {
@@ -69,10 +53,16 @@
   }
 
   .task-ranking-quality, .task-ranking {
+    font-size: 16px;
     display: flex;
+    flex-wrap: wrap;
     align-self: flex-end;
     margin: 5px;
+    padding-top: 10px;
   }
 
-
+  .completed-task {
+    margin: auto;
+    margin-top: 20px;
+  }
 }
