@@ -89,6 +89,10 @@
   &:focus {
     outline: none;
   }
+  &:disabled, &:disabled:hover {
+    cursor: default;
+    color: $button-disabled-color;
+  }
 }
 
 .downvote {
