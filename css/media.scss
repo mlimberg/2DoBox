@@ -1,0 +1,78 @@
+@media screen and (min-width: 800px) {
+
+.input-section input, .input-section button, .input-section textarea, .search-section input, .search-bar, #save-button {
+    width: 700px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.task-box {
+  width: 675px;
+}
+
+.filter-section {
+  width: 700px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+  border-bottom: 1px #ffffff solid;
+  width: 0%;
+  margin: none;
+  padding-bottom: 0px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .completed-task {
+    display: block;
+    float: right;
+    margin-top: 5px;
+  }
+
+  .task-box-footer {
+    margin-bottom: 20px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    display: block;
+    width: 100%;
+  }
+
+  #show-completed, #search-input {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .task-box-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .task-ranking-quality, .task-ranking {
+    display: flex;
+    align-self: flex-end;
+    margin: 5px;
+  }
+
+
+}

@@ -1,22 +1,33 @@
 @mixin button-disabled {
   background-color: $button-disabled-color;
+  border: none;
   color: $button-font-color;
   cursor: default;
-  border: none;
 }
 
 @mixin button-enabled {
   background-color: $button-background-color;
-  color: $button-font-color;
   border-radius: 5px;
   border: none;
+  color: $button-font-color;
 }
 
 @mixin button-hover {
   background-color: $button-hover-background;
+  border: none;
   color: $button-font-color;
   cursor: pointer;
+}
+
+@mixin circle-button {
   border: none;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  vertical-align: bottom;
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn {
@@ -27,48 +38,95 @@
   &:disabled, &:disabled:hover {
     @include button-disabled;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 #save-button {
-  font-size: 20px;
-  width: 80%;
-  margin: 5px auto;
   display: block;
+  font-size: 20px;
+  margin: 5px auto;
+  width: 80%;
 }
 
 #show-completed {
-  height: 45px;
-  margin: 20px 2.5px;
   font-size: 14px;
+  height: 42.5px;
+  margin: 20px 2.5px;
   width: 20%;
 }
 
 .completed-task {
-  height: 25px;
-  width: 15%;
+  display: inline-block;
+  float: right;
   font-size: 13px;
+  height: 25px;
+  margin-right: 0;
   vertical-align: center;
-  margin-left: 1%;
+  width: 100px;
 }
 
 #show-more {
+  border-radius: 0;
+  font-size: 20px;
   height: 70px;
   width: 100%;
-  font-size: 20px;
-  border-radius: 0;
 }
 
 .quality-btns {
-  display: inline-block;
-  border: none;
   background-color: white;
+  border: none;
+  font-size: 15px;
   font-weight: 500;
   height: 40px;
-  margin: 10px auto;
-  font-size: 15px;
-  width: 15%;
+  margin: 5px auto;
+  width: 100px;
   &:hover {
     color: $button-hover-background;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.downvote {
+  background: url('../Images/downvote.svg');
+  &:hover {
+    background: url('../Images/downvote-hover.svg');
+    cursor: pointer;
+  }
+  &:hover:disabled {
+    background: url('../Images/downvote.svg');
+    cursor: default;
+  }
+}
+
+.upvote {
+  background: url('../Images/upvote.svg');
+  &:hover {
+    background: url('../Images/upvote-hover.svg');
+    cursor: pointer;
+  }
+  &:hover:disabled {
+    background: url('../Images/upvote.svg');
+    cursor: default;
+  }
+}
+
+.upvote, .downvote {
+  @include circle-button;
+  margin-right: 20px;
+}
+
+.delete-task {
+  background: url('../Images/delete.svg');
+  @include circle-button;
+  float: right;
+  &:hover {
+    background-image: url('../Images/delete-hover.svg');
+    background-position: inherit;
     cursor: pointer;
   }
 }

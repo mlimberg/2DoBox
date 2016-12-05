@@ -1,0 +1,65 @@
+.task-box {
+  width: 90%;
+  margin: 30px auto;
+  display: block;
+  border-bottom: 1px solid #D1D3D4;
+  padding-bottom: 20px
+}
+
+.task-box-header {
+  width: 100%;
+  text-align: left;
+}
+
+.task-title {
+  color: #4E5251;
+  display: inline-block;
+  font-size: 40px;
+  overflow: visible;
+  width: 85%;
+  margin-bottom: 15px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.task-body {
+  color: #6D7271;
+  margin: 30px auto;
+  font-size: 25px;
+  font-weight: lighter;
+  border: none;
+  width: 98%;
+  overflow: visible;
+  &:focus {
+    outline: none;
+  }
+}
+
+.task-box-footer {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.task-ranking-quality {
+  display: inline-block;
+  height: 30px;
+  text-align: right;
+  margin-right: 1px;
+  font-size: 20px;
+  vertical-align: center;
+}
+
+.task-ranking {
+  color: #6D7271;
+  display: inline-block;
+  height: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.strike-thru {
+  text-decoration: line-through;
+}
