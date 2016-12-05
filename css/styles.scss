@@ -1,0 +1,258 @@
+@import 'reset';
+@import 'variables';
+@import 'buttons';
+
+
+html, body {
+  font-family: 'Open-Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  width: 85px;
+}
+
+#box-text {
+  color: #4E5251;
+}
+
+#task-text {
+  color: #212687;
+}
+
+.main-h1 {
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  padding: 20px 0 40px 0;
+}
+
+.input-section {
+  width: 100%;
+  height: 310px;
+  background-color: #BCCCFB;
+  padding-bottom: 20px;
+}
+
+.input-section h1 {
+  color: #00a79d;
+  font-size: 50px;
+  display: inline-block;
+}
+
+.input-section input, .input-section textarea {
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.completed {
+  display: none;
+}
+
+ .input-section input, .input-section textarea, .search-section input {
+   font-size: 20px;
+   padding-left: 5px;
+ }
+
+ input:focus, textarea:focus, button:focus, .task-title:focus, .task-body:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+#title-input, #save-button, #search-input {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+
+
+#search-input {
+  width: 70%;
+  display: block;
+  margin: 20px 2.5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+#body-input {
+  height: 90px;
+  margin-bottom: 5px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.task-box {
+  width: 90%;
+  margin: 30px auto;
+  display: block;
+  border-bottom: 1px solid #D1D3D4;
+  padding-bottom: 20px
+}
+
+.task-box-header {
+  width: 100%;
+  text-align: left;
+  overflow: scroll;
+}
+
+.task-title {
+  color: #4E5251;
+  display: inline-block;
+  font-size: 40px;
+  overflow: visible;
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+.upvote:hover, .downvote:hover, .delete-task:hover {
+  cursor: pointer;
+}
+
+.delete-task {
+  display: inline-block;
+  float: right;
+  background: url('../Images/delete.svg');
+  height: 40px;
+  width: 40px;
+  vertical-align: bottom;
+  border: none;
+}
+
+.delete-task:hover {
+  background-image: url('../Images/delete-hover.svg');
+  background-position: inherit;
+}
+
+.task-body {
+  color: #6D7271;
+  margin: 30px auto;
+  font-size: 25px;
+  font-weight: lighter;
+  border: none;
+  width: 98%;
+}
+
+.task-box-footer {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.task-ranking-quality {
+  display: inline-block;
+  height: 30px;
+  text-align: right;
+  margin-right: 1px;
+  font-size: 20px;
+  vertical-align: center;
+}
+
+.task-ranking {
+  color: #6D7271;
+  display: inline-block;
+  height: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.upvote, .downvote {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  border: none;
+}
+
+.downvote {
+  background: url('../Images/downvote.svg');
+  &:hover {
+    background: url('../Images/downvote-hover.svg');
+  }
+  &:hover:disabled {
+    background: url('../Images/downvote.svg');
+    cursor: default;
+  }
+}
+
+.upvote {
+  background: url('../Images/upvote.svg');
+  &:hover {
+    background: url('../Images/upvote-hover.svg');
+  }
+  &:hover:disabled {
+    background: url('../Images/upvote.svg');
+    cursor: default;
+  }
+}
+
+.remaining-characters {
+  display: inline-block;
+  padding-right: 3px;
+  color: black;
+}
+
+.character-text {
+  display: inline-block;
+  color: black;
+}
+
+.strike-thru {
+  text-decoration: line-through;
+}
+
+.character-count {
+  display: block;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 900px) {
+
+.input-section input, .input-section button, .input-section textarea, .search-section input{
+    width: 814px;
+}
+
+#save-button{
+    width: 820px;
+}
+
+.task-box {
+  width: 820px;
+}
+
+.hidden {
+  display: none;
+  border-bottom: 1px #ffffff solid;
+  width: 0%;
+  margin: none;
+  padding-bottom: 0px;
+}
+}
